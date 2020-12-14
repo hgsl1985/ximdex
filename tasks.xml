@@ -1,0 +1,65 @@
+<scheme>
+  .csv            .json
+    |               |
+    | (importación) |
+    v               v
+ csv_table     json_table
+     |             |
+     | (procesado) |
+     v             v
+     processed_table
+            |
+            | [(insert)]
+            v
+         [MySQL]
+            |
+            | [(fetch)]
+            v
+        calc_table
+            |
+            | (calculations)
+            v
+       sales_table
+            |
+            | (calculations)
+            v
+      profits_table
+            |
+            | (echo)
+            v
+          print
+</scheme>
+
+<core>
+    <done>
+        importar archivo CSV a array
+        importar archivo JSON a array
+        recorrer el array y devolver valores únicos de la lista de categorías 
+        pintar la salida de las anteriores
+        calcular el beneficio de venta
+        extraer a una función las operaciones con números</done>
+    <doing>
+    </doing>
+    <todo>
+    </todo>
+</core>
+
+<extra>
+    <done>
+    <doing>
+    </doing>
+    <todo>
+        almacenar en base de datos tras procesar y antes de calcular
+        validar que el csv tenga cabeceras
+        validar el formato del json
+        aceptar más de un archivo en el path de entrada
+        path por defecto
+        validación de argumentos para las rutas de csv y json, sacar errores
+        ¿aceptar "," en el csv?
+        vista para lanzar el script desde navegador
+        vista para subir los archivos desde navegador
+        vista para mostrar el output en navegador
+        buscar caracteres a eliminar en los archivos en lugar de meterlos en código
+        html dinámico si se vuelve a ejecutar el comando
+    </todo>
+</extra>
